@@ -1,0 +1,23 @@
+<div class="menu-table-container">
+  <h2>Our Menu</h2>
+<div class="menu-row">
+  <div *ngFor="let category of menuCategories$" class="menu-column" >
+    <div class="menu-category">
+    <h3>{{ category.name }}</h3>
+    <table>
+      <tbody>
+        <tr *ngFor="let item of category.items">
+          <td>
+            <a [routerLink]="['/disk-details', item.id]">
+              <span class="item-name">{{ item.name }}</span> 
+            </a>
+          </td>
+          <td>
+            <span class="item-price">kr {{ item.price.toFixed(2) }}</span>
+          </td>
+      </tbody>           
+      </table>  
+    
+    </div>
+  </div>    
+</div>

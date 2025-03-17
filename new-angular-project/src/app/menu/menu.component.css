@@ -1,0 +1,77 @@
+/* Menu Container */
+.menu-table-container {
+  width: 100%; /* Take up the full width */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Menu Row */
+.menu-row {
+  display: flex; /* Enable Flexbox */
+  flex-wrap: wrap; /* Wrap columns if needed */
+  justify-content: space-around; /* Distribute columns evenly */
+}
+
+/* Menu Column */
+.menu-column {
+  flex: 1; /* Distribute available space equally */
+  min-width: 250px; /* Minimum width for columns */
+  margin: 10px; /* Space between columns */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Menu Category */
+.menu-category {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.menu-category a {
+  text-decoration: none;
+  color: #000; /* Set color to black */
+  cursor: pointer;
+}
+
+.menu-category a:hover {
+  color: #333; /* Darker gray on hover */
+  /* text-decoration: underline; add this if you want an underline on hover */
+}
+
+.menu-category h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  display: center;
+  text-align: center;
+}
+
+/* Menu Items */
+.menu-category table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-category td {
+  padding: 8px;
+  text-align: left;
+}
+
+.menu-category td.item-price {
+  text-align: right;
+}
+
+.menu-category tr { /* Added this style */
+  border-bottom: 1px solid #eee;
+}
+
+.menu-category tr:last-child { /* Added this style */
+  border-bottom: none;
+}
